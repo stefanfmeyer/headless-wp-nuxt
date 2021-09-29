@@ -37,12 +37,12 @@ import AppMasthead from "@/components/AppMasthead.vue";
 
 export default {
   components: {
-    AppMasthead
+    AppMasthead,
   },
   data() {
     return {
       selectedTag: null,
-      activeClass: "active"
+      activeClass: "active",
     };
   },
   computed: {
@@ -54,8 +54,8 @@ export default {
     },
     sortedPosts() {
       if (!this.selectedTag) return this.posts;
-      return this.posts.filter(el => el.tags.includes(this.selectedTag));
-    }
+      return this.posts.filter((el) => el.tags.includes(this.selectedTag));
+    },
   },
   created() {
     this.$store.dispatch("getPosts");
@@ -67,8 +67,8 @@ export default {
       } else {
         this.selectedTag = null;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
