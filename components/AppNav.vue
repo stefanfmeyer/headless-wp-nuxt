@@ -2,9 +2,7 @@
   <div class="nav">
     <ul>
       <li>
-        <nuxt-link exact to="/">
-          <app-icon></app-icon>BlogName
-        </nuxt-link>
+        <nuxt-link exact to="/"> <app-icon></app-icon>Stefcodes</nuxt-link>
       </li>
       <li>
         <nuxt-link to="/about">About</nuxt-link>
@@ -18,8 +16,8 @@ import AppIcon from "@/components/AppIcon.vue";
 
 export default {
   components: {
-    AppIcon
-  }
+    AppIcon,
+  },
 };
 </script>
 
